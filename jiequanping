@@ -1,0 +1,5 @@
+from PIL import ImageGrab
+import os
+im = ImageGrab.grab()  # 截取全屏
+im.save("测试.png")
+outfile=os.path.join("E:/pythontest/imageshibie/测试.png")
