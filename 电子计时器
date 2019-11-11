@@ -1,0 +1,40 @@
+<html>
+<head>
+<script type="text/javascript">
+var c=0
+var t
+function timedCount()
+{
+document.getElementById('txt').value=c
+c=c+1
+t=setTimeout("timedCount()",1000)
+}
+
+function stopCount()
+{
+temp=c;
+setTimeout("document.getElementById('txt2').value=temp",temp);
+
+}
+</script>
+</head>
+
+<body>
+
+<form>
+<input type="button" value="开始计时" onClick="timedCount()">
+<input type="text" id="txt" bgcolor="red">
+<input type="button" value="计时" onClick="stopCount()">
+<input type="text" id="txt2">
+
+
+
+</form>
+
+
+<p>请点击上面的“开始计时”按钮来启动计时器。输入框会一直进行计时，从 0 开始。点击“计时”按钮可以计下时间，模拟运动时所需要的计时器。</p>
+
+
+</body>
+
+</html>
